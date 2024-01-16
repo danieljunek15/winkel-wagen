@@ -29,5 +29,8 @@
         @endforeach
         <div id="plekVoorEindTotaal"></div>
     </div>
+    <form method="get" action="{{route('productItemSubmit')}}">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
