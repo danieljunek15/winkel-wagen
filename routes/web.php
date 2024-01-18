@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::get('/productList', [App\Http\Controllers\ProductListController::class, 'index'])->name('list');
 Route::get('/productItemSubmit', [App\Http\Controllers\ProductListController::class, 'submitWinkelWagenData'])->name('productItemSubmit');
+Route::get('/productItemLeegWinkelMandNaBetaling', [App\Http\Controllers\ProductListController::class, 'productItemLeegWinkelMandNaBetaling'])->name('productItemLeegWinkelMandNaBetaling');
 
 //Dit is de rout met ProductItem data (API)
 Route::get('/productItem', [App\Http\Controllers\ProductItemDataAPIController::class, 'index'])->name('data');
